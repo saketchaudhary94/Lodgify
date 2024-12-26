@@ -1,8 +1,9 @@
 const User = require("../models/user");
+const Listing = require("../models/listing");
 
 // get route for home page 
 module.exports.renderHomePage = (req , res)=>{
-    res.render("listings/index.ejs");
+    res.render("listings/index.ejs" , {allListings : []});
 };
 
 // get route callback
