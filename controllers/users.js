@@ -2,8 +2,15 @@ const User = require("../models/user");
 const Listing = require("../models/listing");
 
 // get route for home page 
-module.exports.renderHomePage = (req , res)=>{
-    res.render("listings/index.ejs" , {allListings : []});
+module.exports.renderHomePage = async (req , res)=>{
+    try{
+        let allListings = await Listing.find();
+        res.render("listings/index.ejs" , {allListings });
+    }
+    catch(e){
+        req.flash("error" , e.message);
+        res.redirect("/");
+    }
 };
 
 // get route callback
