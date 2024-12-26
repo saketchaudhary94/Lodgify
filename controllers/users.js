@@ -1,5 +1,10 @@
 const User = require("../models/user");
 
+// get route for home page 
+module.exports.renderHomePage = (req , res)=>{
+    res.render("listings/index.ejs");
+};
+
 // get route callback
 module.exports.renderSignupForm = (req , res)=>{
     res.render("users/signup.ejs");
