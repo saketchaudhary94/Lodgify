@@ -37,7 +37,7 @@ To run this project locally, follow these steps:
 1. Clone the repository
 bash
 Copy code
-git clone https://github.com/yourusername/Lodgify.git
+
 2. Install dependencies
 Navigate to the project folder and install the required dependencies.
 
