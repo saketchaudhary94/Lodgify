@@ -57,7 +57,7 @@ JWT_SECRET=your_jwt_secret
 bash
 Copy code
 npm start
-The application should now be running on http://localhost:5000.
+The application should now be running on http://localhost:8080.
 
 How It Works
 User Registration & Login: Users can create an account and log in. Passwords are securely hashed using bcrypt, and authentication is handled using JWT.
